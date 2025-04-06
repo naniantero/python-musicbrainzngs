@@ -241,6 +241,7 @@ def _check_includes_impl(includes, valid_includes):
             raise InvalidIncludeError("Bad includes: "
                                       "%s is not a valid include" % i)
 def _check_includes(entity, inc):
+    print(entity, inc)
     _check_includes_impl(inc, VALID_INCLUDES[entity])
 
 def _check_filter(values, valid):
